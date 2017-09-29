@@ -1,0 +1,128 @@
+//wnd[0]/scrptPersonas_1499889375859
+
+//Lazy man's way to populate the Work Centers into the WC dropdown
+//Future plans are to populate dynamically based on the ZTAB_WORK table
+//Set focus on the Work Center selection
+
+var oCombo = session.findById("wnd[0]/usr/cmbPersonas_149988935631844");
+
+
+var oEntries =oCombo.entries;
+oEntries.removeAll();
+var oEntry1 = oEntries.createComboBoxEntry("100","100"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("100-N","100-N"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("100-Q","100-Q"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("101","101"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("101-N","101-N"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("101-Q","101-Q"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("102","102"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("102-N","102-N"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("102-Q","102-Q"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("103","103"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("103-N","103-N"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("103-Q","103-Q"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("104","104"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("104-Q","104-Q"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("110","110"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("110-Q","110-Q"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("111-D","111-D"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("111-Q","111-Q"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("120","120"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("120-D","120-D"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("120-Q","120-Q"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("121","121"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("121-D","121-D"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("121-Q","121-Q"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("122","122"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("122-D","122-D"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("122-Q","122-Q"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("123","123"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("123-Q","123-Q"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("130","130"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("130-Q","130-Q"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("131","131"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("230","230"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("231","231"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("232","232"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("233","233"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("234","234"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("235","235"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("236","236"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("236FAA","236FAA"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("237","237"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("238","238"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("239","239"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("250","250"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("300","300"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("300-Q","300-Q"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("513","513"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("514","514"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("515","515"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("516","516"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("517","517"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("519","519"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("520","520"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("521","521"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("522","522"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("523","523"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("524","524"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("525","525"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("526","526"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("527","527"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("528","528"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("529","529"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("52901","52901"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("530","530"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("531","531"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("565","565"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("581","581"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("582","582"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("58201","58201"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("58202","58202"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("583","583"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("58301","58301"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("58302","58302"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("584","584"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("58401","58401"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("58402","58402"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("58403","58403"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("58404","58404"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("58405","58405"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("58406","58406"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("58407","58407"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("58407A","58407A"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("58407B","58407B"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("58408","58408"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("58409","58409"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("58410","58410"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("58411","58411"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("585","585"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("587","587"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("589","589"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("600","600"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("601","601"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("602","602"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("603","603"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("604","604"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("605","605"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("606","606"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("607","607"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("700","700"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("701","701"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("702","702"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("703","703"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("704","704"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("704-Q","704-Q"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("740","740"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("741","741"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("742","742"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("743","743"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("744","744"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("999","999"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("OSM","OSM"); oEntries.add(oEntry1);
+var oEntry1 = oEntries.createComboBoxEntry("Back","Back"); oEntries.add(oEntry1);
+
+oCombo.entries = oEntries;
+
+session.findById("wnd[0]/usr/cmbPersonas_149988935631844").setFocus();
+
